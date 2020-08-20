@@ -18,5 +18,12 @@
   "bugs": {
     "url": "https://github.com/PratikGarai/React-Learning/issues"
   },
-  "homepage": "https://github.com/PratikGarai/React-Learning#readme"
+  "homepage": "https://github.com/PratikGarai/React-Learning#readme",
+  "dependencies": {
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1",
+    "webpack": "^4.44.1",
+    "webpack-cli": "^3.3.12",
+    "webpack-dev-server": "^3.11.0"
+  }
 }

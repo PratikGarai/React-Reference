@@ -1,0 +1,22 @@
+{
+  "name": "react-learning",
+  "version": "1.0.0",
+  "description": "A casual Repo for learning ReactJS",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/PratikGarai/React-Learning.git"
+  },
+  "keywords": [
+    "ReactJS"
+  ],
+  "author": "PratikGarai",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/PratikGarai/React-Learning/issues"
+  },
+  "homepage": "https://github.com/PratikGarai/React-Learning#readme"
+}

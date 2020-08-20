@@ -20,10 +20,17 @@
   },
   "homepage": "https://github.com/PratikGarai/React-Learning#readme",
   "dependencies": {
+    "babel-core": "^6.26.3",
+    "babel-loader": "^8.1.0",
+    "babel-preset-env": "^1.7.0",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
     "webpack": "^4.44.1",
     "webpack-cli": "^3.3.12",
     "webpack-dev-server": "^3.11.0"
+  },
+  "devDependencies": {
+    "babel-preset-react": "^6.24.1",
+    "html-webpack-plugin": "^4.3.0"
   }
 }

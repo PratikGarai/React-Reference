@@ -11,5 +11,3 @@ function MyInfo() {
 		</div>
 	);
 };
-
-export default MyInfo

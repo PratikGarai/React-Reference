@@ -1,0 +1,11 @@
+.header-nav__list{
+	list-style : None ;
+
+}
+
+.header-nav__list li {
+	text-decoration : None;
+	display : inline ;
+	padding : 0.1em;
+	margin : 0.5em;
+}

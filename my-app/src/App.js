@@ -1,14 +1,15 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+// import logo from './logo.svg';
+// import './App.css';
 import Header from './components/Header.js'
 import Footer from './components/Footer.js'
+import CheckList from './components/CheckList.js'
 
 function App() {
   return (
     	  <div>
 	  <Header />
-	  	This is the body of Main App
+	  <CheckList />
 	  <Footer />
     	  </div>
   );

@@ -2,7 +2,7 @@ import React from 'react';
 
 class ProductCard extends React.Component{
 
-	render(props){
+	render(){
 		return(
 		<div>
 			<h3>{this.props.p.product_label}</h3>

@@ -1,0 +1,28 @@
+{
+  "products": [
+    {
+      "product_id": "1",
+      "product_label": "white_shirt",
+      "product_url": "https://assets.abfrlcdn.com/img/app/product/1/172901-434647-large.jpg"
+    },
+    {
+      "product_id": "2",
+      "product_label": "top",
+      "product_url": "https://assets.myntassets.com/h_640,q_90,w_480/v1/assets/images/1719933/2017/2/22/11487765190073-Roadster-Women-Olive-Solid-Regular-Top-9441487765189834-1.jpg"
+    },
+    {
+      "product_id": "3",
+      "product_label": "white_shirt",
+      "product_url": "http://fixfashion.co.nz/wp-content/uploads/2018/03/8111004.WHT_1-570x760.jpg"
+    },
+    {
+      "product_id": "4",
+      "product_label": "shoe",
+      "product_url": "https://assets.myntassets.com/h_240,q_90,w_180/v1/assets/images/1465362/2016/8/18/11471499895066-Roadster-Men-Brown-Solid-Regular-Sneakers-3411471499894853-1_mini.jpg"
+    },
+    {
+      "product_id": "5",
+      "product_label": "gown",
+      "product_url": "https://www.wewillfashion.com/pub/media/catalog/product/cache/5ab063e30dbf74cb9bb799f550ede913/w/e/we15k27.jpg"
+    }]
+}

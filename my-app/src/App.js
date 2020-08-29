@@ -1,13 +1,13 @@
 import React from 'react';
 import Header from './components/Header.js'
 import Footer from './components/Footer.js'
-import F from './components/TimeGreeting.js'
+import Styling from './components/Styling.js'
 
 function App() {
   return (
     	  <div>
 	  <Header />
-	  <F />
+	  <Styling />
 	  <Footer />
     	  </div>
   );

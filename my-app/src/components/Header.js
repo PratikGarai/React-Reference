@@ -13,6 +13,8 @@ function Header()
 					<li><a href="#">Link 3</a></li>
 				</ul>
 			</nav>
+		<br />
+		<hr />
       		</header>
 	);
 }

@@ -3,7 +3,7 @@ import React from 'react';
 const Styling = ()=> {
 	const styles = {
 		color : 'red',
-		fontSize : 22,
+		fontSize : 50,
 		backgroundColor : 'cyan'
 	}
 	return (

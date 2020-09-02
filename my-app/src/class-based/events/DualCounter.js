@@ -6,6 +6,8 @@ class DualCounter extends React.Component {
 		this.state = {
 			counter : 0
 		}
+		this.handleClick1 = this.handleClick1.bind(this);
+		this.handleClick2 = this.handleClick2.bind(this);
 	}
 
 	handleClick1(){
@@ -18,13 +20,23 @@ class DualCounter extends React.Component {
 		);
 	};
 
+	handleClick2(){
+		this.setState( prevState =>
+			{
+				return {
+					counter : prevState.counter - 1
+				}
+			}
+		);
+	};
+
 	render()
 	{
 		return(
 			<div>
 				<h1>{this.state.counter}</h1>
 				<button onClick = {this.handleClick1} >Up</button>
-				<button>Down</button>
+				<button onClick = {this.handleClick2} >Down</button>
 			</div>
 		);
 	}

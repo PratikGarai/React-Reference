@@ -1,13 +1,13 @@
 import React from 'react';
 import Header from './components/Header.js';
 import Footer from './components/Footer.js';
-import ProductFrame from './class-based/ProductFrame.js';
+import DualCounter from './class-based/events/DualCounter.js';
 
 function App() {
   return (
     	  <div>
 	  <Header />
-	  <ProductFrame />
+	  <DualCounter />
 	  <Footer />
     	  </div>
   );

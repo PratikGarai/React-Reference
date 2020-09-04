@@ -3,10 +3,19 @@ import React from 'react';
 class TravelForm extends React.Component{
 
 	constructor(){
-		super()
+		super();
 		this.state = {
 			firstName : ""
-		}
+		};
+		this.handleChange = this.handleChange.bind(this);
+	}
+	
+	handleChange(event)
+	{
+		const {name, value} = event.target;
+		this.setState({
+			[name] : value
+		});
 	}
 
 	render(){
@@ -16,10 +25,12 @@ class TravelForm extends React.Component{
 				<label for="firstName">First Name : </label>
 				<input 
 					type="text"
-					value = ""
+					value = {this.state.firstName}
 					placeholder = "First Name"
+					name = "firstName"
+					onChange = {this.handleChange}
 				/>
-			</fomv>
+			</form>
 		</div>
 		);
 	}

@@ -1,15 +1,11 @@
 import React from 'react';
 import 'regenerator-runtime/runtime';
-import Header from './components/Header.js';
-import Footer from './components/Footer.js';
-import DualCounter from './class-based/events/DualCounter.js';
+import FetcherApp from './class-based/FetcherApp';
 
 function App() {
   return (
     	  <div>
-	  <Header />
-	  <DualCounter />
-	  <Footer />
+	  <FetcherApp />
     	  </div>
   );
 }

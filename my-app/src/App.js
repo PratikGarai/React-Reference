@@ -1,11 +1,11 @@
 import React from 'react';
 import 'regenerator-runtime/runtime';
-import FetcherApp from './class-based/FetcherApp';
+import FormEvent1 from './class-based/FormEvent1.js';
 
 function App() {
   return (
     	  <div>
-	  <FetcherApp />
+	  <FormEvent1 />
     	  </div>
   );
 }

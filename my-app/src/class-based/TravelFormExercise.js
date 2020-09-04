@@ -27,7 +27,7 @@ class TravelForm extends React.Component{
 	{
 		window.alert("Name : "+ this.state.firstName +" "+ this.state.lastName + "\n"+
 			"Age : "+ this.state.age + "\n"+"Gender : "+this.state.gender
-			+'\n'+this.state.destination );
+			+'\n'+"Destination : "+this.state.destination );
 			
 	}
 
@@ -81,9 +81,12 @@ class TravelForm extends React.Component{
 				/> Female
 				<br />
 				<br />
+				<label for="destination"> Destination : </label> <br/>
 				<select
+					name = "destination"
 					value = {this.state.destination}
 					onChange = {this.handleChange}>
+				<option value="">---- Choose your destination ----</option>
 				<option value="destination 1">Destination 1</option>
 				<option value="destination 2">Destination 2</option>
 				<option value="destination 3">Destination 3</option>

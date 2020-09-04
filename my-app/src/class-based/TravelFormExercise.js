@@ -10,7 +10,7 @@ class TravelForm extends React.Component{
 			age : ""
 		};
 		this.handleChange = this.handleChange.bind(this);
-		this.handleSubmit = this.handleSubmit.bin(this);
+		this.handleSubmit = this.handleSubmit.bind(this);
 	}
 	
 	handleChange(event)
@@ -23,12 +23,15 @@ class TravelForm extends React.Component{
 
 	handleSubmit()
 	{
+		window.alert("Name : "+ this.state.firstName +" "+ this.state.lastName + "\n"+
+			"Age : "+ this.state.age + "\n");
+			
 	}
 
 	render(){
 		return(
 		<div>
-			<form>
+			<form onSubmit = {this.handleSubmit} >
 				<label for="firstName">First Name : </label>
 				<input 
 					type="text"
@@ -57,7 +60,9 @@ class TravelForm extends React.Component{
 					name = "age"
 					onChange = {this.handleChange}
 				/>
-				<input type="submit" onSubmit={this.handleSubmit}></input>
+				<br />
+				<br />
+				<input type="submit" value="Submit!"></input>
 			</form>
 			<br />
 			<br />

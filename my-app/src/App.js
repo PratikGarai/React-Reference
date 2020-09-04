@@ -1,11 +1,11 @@
 import React from 'react';
 import 'regenerator-runtime/runtime';
-import FormEvent1 from './class-based/FormEvent1.js';
+import TravelForm from './class-based/TravelFormExercise.js';
 
 function App() {
   return (
     	  <div>
-	  <FormEvent1 />
+	  <TravelForm />
     	  </div>
   );
 }

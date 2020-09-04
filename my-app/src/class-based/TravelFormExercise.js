@@ -8,7 +8,8 @@ class TravelForm extends React.Component{
 			firstName : "",
 			lastName : "",
 			age : "",
-			gender : ""
+			gender : "",
+			destination : ""
 		};
 		this.handleChange = this.handleChange.bind(this);
 		this.handleSubmit = this.handleSubmit.bind(this);
@@ -25,7 +26,8 @@ class TravelForm extends React.Component{
 	handleSubmit()
 	{
 		window.alert("Name : "+ this.state.firstName +" "+ this.state.lastName + "\n"+
-			"Age : "+ this.state.age + "\n"+"Gender : "+this.state.gender);
+			"Age : "+ this.state.age + "\n"+"Gender : "+this.state.gender
+			+'\n'+this.state.destination );
 			
 	}
 
@@ -79,7 +81,18 @@ class TravelForm extends React.Component{
 				/> Female
 				<br />
 				<br />
-				<input type="submit" value="Submit!"></input>
+				<select
+					value = {this.state.destination}
+					onChange = {this.handleChange}>
+				<option value="destination 1">Destination 1</option>
+				<option value="destination 2">Destination 2</option>
+				<option value="destination 3">Destination 3</option>
+				<option value="destination 4">Destination 4</option>
+				<option value="destination 5">Destination 5</option>
+				</select>
+				<br />
+				<br />
+				<input type="submit" value="Submit!" />
 			</form>
 			<br />
 			<br />
@@ -88,6 +101,7 @@ class TravelForm extends React.Component{
 			<p> Your Name is : <strong>{this.state.firstName} {this.state.lastName}</strong></p>
 			<p> Your age is : <strong>{this.state.age}</strong></p>
 			<p> Gender : <strong>{this.state.gender}</strong></p>
+			<p> Destination : <strong>{this.state.destination}</strong></p>
 		</div>
 		);
 	}

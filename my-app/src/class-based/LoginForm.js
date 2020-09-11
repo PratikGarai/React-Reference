@@ -8,7 +8,8 @@ class LoginForm extends React.Component{
 			username:"",
 			password:"",
 			age:"",
-			gender:""
+			gender:"",
+			type : ""
 		}
 		this.handleChange = this.handleChange.bind(this)
 	}
@@ -16,8 +17,12 @@ class LoginForm extends React.Component{
 	handleChange(event)
 	{
 		const {name, value} = event.target;
-		this.setState({
-			[name] : value
+		this.setState(prevState => {
+			if (name==="age" && value<1)
+				return prevState;
+			return{
+				[name] : value
+			}
 		});
 	}
 
@@ -30,6 +35,41 @@ class LoginForm extends React.Component{
 					name="username"
 					value={this.state.name}
 					placeholder = "Your Name Here"
+					onChange = {this.handleChange}
+				/>
+				<input 
+					type="password"
+					name="password"
+					value={this.state.password}
+					placeholder = "Your Password Here"
+					onChange = {this.handleChange}
+				/>
+				<input 
+					type="number"
+					name="age"
+					value={this.state.age}
+					placeholder = "Your Age Here"
+					onChange = {this.handleChange}
+				/>
+				<select 
+					name="gender"
+					onChange = {this.handleChange}
+					value = {this.state.gender}>
+					<option value="">--Your Gender Here --</option>
+					<option value="M">Male</option>
+					<option value="F">Female</option>
+				</select>
+				<input 
+					type="radio"
+					name="type"
+					value="Admin"
+					checked = {this.state.type==="Admin"}
+					onChange = {this.handleChange}
+				/>
+				<input 
+					type="radio"
+					name="type"
+					value="User"
 					onChange = {this.handleChange}
 				/>
 			</form>

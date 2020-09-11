@@ -1,31 +1,19 @@
-import React from 'react';
+import React, {useState} from 'react';
 
-class FormEvent1 extends React.Component
+function FormEvent1()
 {
-	constructor()
-	{
-		super();
-		this.state = {
-			text:"???"
-		}
-		this.handler = this.handler.bind(this);
+	const [text, setText] = useState("???");
+
+	function handler(event){
+		setText(event.target.value==""?"???":event.target.value);
 	}
 
-	handler(event){
-		this.setState({
-			text : event.target.value==""?"???":event.target.value
-		});
-	}
-
-	render()
-	{
-		return(
-			<div>
-				<input type="text" placeholder="Your Name" onChange={this.handler} />
-				<p>{this.state.text}</p>
-			</div>
-		);
-	}
+	return(
+		<div>
+			<input type="text" placeholder="Your Name" onChange={handler} />
+			<p>{text}</p>
+		</div>
+	);
 }
 
 export default FormEvent1;

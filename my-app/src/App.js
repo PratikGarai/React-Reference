@@ -1,11 +1,11 @@
 import React from 'react';
 import 'regenerator-runtime/runtime';
-import LoginForm from './class-based/LoginForm.js';
+import FormEvent1 from './class2function/FormEvent1.js';
 
 function App() {
   return (
     	  <div>
-	  <LoginForm />
+	  <FormEvent1 />
     	  </div>
   );
 }

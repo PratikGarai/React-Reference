@@ -1,6 +1,6 @@
 import React from 'react';
 
-class LoginForm{
+class LoginForm extends React.Component{
 
 	constructor(){
 		super();
@@ -13,7 +13,10 @@ class LoginForm{
 	}
 
 	render(){
-		return();
+		return(
+			<div className="main-div">
+			</div>
+		);
 	}
 }
 

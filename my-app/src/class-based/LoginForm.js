@@ -28,7 +28,7 @@ class LoginForm extends React.Component{
 
 	handleSubmit(event)
 	{
-		window.alert("Good!");
+		window.alert("Submitted!");
 	}
 
 	render(){

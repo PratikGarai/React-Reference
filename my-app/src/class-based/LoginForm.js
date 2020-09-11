@@ -26,10 +26,16 @@ class LoginForm extends React.Component{
 		});
 	}
 
+	handleSubmit(event)
+	{
+		window.alert("Good!");
+	}
+
 	render(){
 		return(
 			<div className="main-div">
-			<form>
+			<form onSubmit={this.handleSubmit}>
+				<label for="username">User Name : </label>
 				<input 
 					type="text"
 					name="username"
@@ -37,6 +43,9 @@ class LoginForm extends React.Component{
 					placeholder = "Your Name Here"
 					onChange = {this.handleChange}
 				/>
+				<br />
+				<br />
+				<label for="password">Password : </label>
 				<input 
 					type="password"
 					name="password"
@@ -44,6 +53,9 @@ class LoginForm extends React.Component{
 					placeholder = "Your Password Here"
 					onChange = {this.handleChange}
 				/>
+				<br />
+				<br />
+				<label for="age">Age (in years) : </label>
 				<input 
 					type="number"
 					name="age"
@@ -51,6 +63,9 @@ class LoginForm extends React.Component{
 					placeholder = "Your Age Here"
 					onChange = {this.handleChange}
 				/>
+				<br />
+				<br />
+				<label for="gender">Gender : </label>
 				<select 
 					name="gender"
 					onChange = {this.handleChange}
@@ -58,19 +73,30 @@ class LoginForm extends React.Component{
 					<option value="">--Your Gender Here --</option>
 					<option value="M">Male</option>
 					<option value="F">Female</option>
+					<option value="O">Others</option>
 				</select>
+				<br />
+				<br />
+				<label for="type">Account Type : </label>
+				<br />
 				<input 
 					type="radio"
 					name="type"
 					value="Admin"
 					checked = {this.state.type==="Admin"}
 					onChange = {this.handleChange}
-				/>
+				/>Admin<br />
 				<input 
 					type="radio"
 					name="type"
 					value="User"
 					onChange = {this.handleChange}
+				/>User
+				<br />
+				<br />
+				<input 
+					type="submit"
+					value = "Register Now!"
 				/>
 			</form>
 			</div>

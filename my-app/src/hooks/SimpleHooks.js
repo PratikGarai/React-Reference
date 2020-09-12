@@ -1,8 +1,16 @@
-import React, {useState} from 'react';
+import React, {useState, useEffect} from 'react';
 
 function SimpleHooks(props)
 {
 	const [counter , setCounter] = useState(0);
+	
+	useEffect(()=>{
+		window.alert("Did something");
+
+		return function cleanup(){
+			window.alert("About to unmount");
+		};
+	});
 
 	const styles = {
 		display : "inline-block",

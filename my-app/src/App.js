@@ -1,11 +1,11 @@
 import React from 'react';
 import 'regenerator-runtime/runtime';
-import SimpleHooks from './hooks/SimpleHooks.js';
+import MainApp from './redux/MainApp.js';
 
 function App() {
   return (
     	  <div>
-	  <SimpleHooks />
+	  <MainApp />
     	  </div>
   );
 }

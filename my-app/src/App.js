@@ -1,11 +1,11 @@
 import React from 'react';
 import 'regenerator-runtime/runtime';
-import MainApp from './redux/MainApp.js';
+import ExampleApp from './router/staticRouteExample';
 
 function App() {
   return (
     	  <div>
-	  <MainApp />
+	  	<ExampleApp />
     	  </div>
   );
 }

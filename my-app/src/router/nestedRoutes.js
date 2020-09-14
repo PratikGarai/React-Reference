@@ -3,7 +3,10 @@ import { BrowserRouter as Router,
 	Switch, 
 	Route,
 	Link,
-	useRouteMatch} from 'react-router-dom';
+	useRouteMatch,
+	NavLink,
+	Redirect,
+	useHistory} from 'react-router-dom';
 
 function ExampleApp(props)
 {
@@ -48,14 +51,16 @@ function AboutApp(props)
 function TopicsApp(props)
 {
 	let match = useRouteMatch();
+	let history = useHistory();
 	return(
 		<div>
 			<h2> Welcome to the topics Page ! </h2>
 			<p> Here is a list of topics </p>
 			<Router>
-				<Link to = {match.url+"/link1"}>Link 1</Link><br />
-				<Link to = {match.url+"/link2"}>Link 2</Link><br />
-				<Link to = {match.url+"/link3"}>Link 3</Link><br />
+				<NavLink to = {match.url+"/link1"}>Link 1</NavLink><br />
+				<NavLink to = {match.url+"/link2"}>Link 2</NavLink><br />
+				<NavLink to = {match.url+"/link3"}>Link 3</NavLink><br />
+				<NavLink to = {match.url+"/link4"}>Redirect Home</NavLink><br />
 				<Switch>
 					<Route path={match.url+"/link1"}>
 						<TemplateTopic number="1" />
@@ -65,6 +70,9 @@ function TopicsApp(props)
 					</Route>
 					<Route path={match.url+"/link3"}>
 						<TemplateTopic number="3" />
+					</Route>
+					<Route path={match.url+"/link4"}>
+						<Redirector history = {history} />
 					</Route>
 				</Switch>
 			</Router>
@@ -76,5 +84,13 @@ function TemplateTopic(props)
 {
 	return(
 	<h3> This is topic number {props.number}!</h3> 
+	);
+}
+
+function Redirector(props)
+{
+	props.history.push('/');
+	return(
+		<h1>Redirecting...</h1>
 	);
 }

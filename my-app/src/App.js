@@ -1,6 +1,6 @@
 import React from 'react';
 import 'regenerator-runtime/runtime';
-import ExampleApp from './router/staticRouteExample';
+import ExampleApp from './router/nestedRoutes.js';
 
 function App() {
   return (

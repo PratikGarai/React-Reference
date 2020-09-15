@@ -49,6 +49,26 @@ function HomeComponent(props)
 function ListComponent(props)
 {
 	return(
-		<p> The list page </p>
+		<div>
+			<p> The list page </p>
+			<Router>
+				<Link to = "/listpage/1">Item 1</Link><br />
+				<Link to = "/listpage/2">Item 2</Link><br />
+				<Link to = "/listpage/3">Item 3</Link>
+				<Switch>
+					<Route path="/listpage/:someParam">
+						<ListItem />
+					</Route>
+				</Switch>
+			</Router>
+		</div>
+	);
+}
+
+function ListItem(props)
+{
+	let params = useParams();
+	return(
+		<h4>This is {params.someParam}th topic.</h4>
 	);
 }

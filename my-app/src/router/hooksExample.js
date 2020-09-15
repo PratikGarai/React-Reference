@@ -23,7 +23,7 @@ function ExampleApp(props)
 				<Route path ="/about">
 					<HomeComponent pageName="About"/>
 				</Route>
-				<Route path ="">
+				<Route path ="/listpage">
 					<ListComponent /> 
 				</Route>
 			</Switch>
@@ -35,6 +35,12 @@ export default ExampleApp;
 
 function HomeComponent(props)
 {
+	console.log("useLocation");
+	console.log(useLocation());
+	console.log("useHistory");
+	console.log(useHistory());
+	console.log("useParams");
+	console.log(useParams());
 	return(
 		<p> This is the {props.pageName} page. </p>
 	);
